@@ -7,11 +7,13 @@ package com.mycompany.app;
 public class App {
   public static String triangulo(int a, int b, int c) {
 
-  if ((a*a)+(b*b) == (c*c)) {
-    return "es un triangulo pitagorico";
-  }
+
     if (!(a + b > c && a + c > b && b + c > a)) {
       return "error no es un triangulo";
+    }
+    
+    if ((a*a)+(b*b) == (c*c)) {
+    return "es un triangulo pitagorico";
     }
     if (a == b && a == c && b == c) {
       return "es un triangulo equilatero";
