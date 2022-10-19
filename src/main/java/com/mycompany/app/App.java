@@ -7,6 +7,9 @@ package com.mycompany.app;
 public class App {
   public static String triangulo(int a, int b, int c) {
 
+  if ((a*a)+(b*b) == (c*c)) {
+    return "es un triangulo pitagorico";
+  }
     if (!(a + b > c && a + c > b && b + c > a)) {
       return "error no es un triangulo";
     }
@@ -19,9 +22,6 @@ public class App {
     return "es un triangulo escaleno";
   }
 
-  if ((a*a)+(b*b) == (c*c)) {
-    return "es un triangulo pitagorico";
-  }
   
   public static void main(String[] args) {
     System.out.println("Hello mundo! - modificado cvo");
