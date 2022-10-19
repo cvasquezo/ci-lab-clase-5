@@ -11,11 +11,10 @@ import org.junit.Test;
 public class AppTest {
   @Test
   public void probarTriangulo() {   
-    assertEquals("es un triangolo pitagorico", App.triangulo(3, 4, 5));
+    assertEquals("error no es un triangulo", App.triangulo(0, 0, 0));
     assertEquals("es un triangulo equilatero", App.triangulo(1, 1, 1));
     assertEquals("es un triangulo isoceles", App.triangulo(2, 2, 3));
     assertEquals("es un triangolo escaleno", App.triangulo(3, 4, 6));
-    assertEquals("error no es un triangulo", App.triangulo(0, 0, 0));
-    
+    assertEquals("es un triangolo pitagorico", App.triangulo(3, 4, 5));
   }
 }
