@@ -13,15 +13,21 @@ public class App {
     }
     
     if ((a * a) + (b * b) == (c * c)) {
-    return "es un triangulo pitagorico";
+    return "es un triangulo Pitagorico";
     }
     if (a == b && a == c && b == c) {
-      return "es un triangulo equilatero";
+      return "es un triangulo Equilatero";
     }
     if (a == b || a == c || b == c) {
-      return "es un triangulo isoceles";
+      return "es un triangulo Isoceles";
     }
-    return "es un triangulo escaleno";
+    
+    if (a != b || a!= c || b != c){
+     return "Es un triangulo Escaleno"; 
+    }
+      
+    
+    return "ERROR, no es un triangulo";
   }
 
   
