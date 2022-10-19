@@ -12,7 +12,7 @@ public class App {
       return "error no es un triangulo";
     }
     
-    if ((a*a)+(b*b) == (c*c)) {
+    if ((a * a) + (b * b) == (c * c)) {
     return "es un triangulo pitagorico";
     }
     if (a == b && a == c && b == c) {
